@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #94a3b8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+    width:100vw;
+}
+.header{
+    background-color: #facc15;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid #d97706;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 10%; 
+}
+.game{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: .8;
+    height: 60%;
+}
+.board{
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    width: 320px;
+    height: 320px;
+    border: 5px solid #d97706;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.cell{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.players{
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex: .2;
+    height: 20%;
+}
+.footer{
+    background-color: #facc15;
+    padding:20px;
+    width: 100%;
+    text-align: center;
+    align-items: baseline;
+    height:10%;
+    border-top: 5px solid #d97706;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
+}
+.modal[open]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #facc15;
+    border: 5px solid #d97706;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 45%;
+}
